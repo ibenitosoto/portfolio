@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #1e2547;
-  --secondary-color: #656fc4;
+  --secondary-color: #7e88df;
 }
 
 * {
@@ -13,6 +13,10 @@
 
 body {
   font-family: 'Poppins';
+}
+
+h1 {
+  font-size: 3em;
 }
 
 .wrapper {
@@ -29,9 +33,28 @@ body {
   padding: 2rem;
 }
 
+main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+main img {
+  width: 400px;
+  border: var(--secondary-color) dashed 5px;
+}
+
+main p {
+  margin-right: 5em;
+  margin-top: 1em;
+}
+
 .menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: right;
   width: 50%;
 }
 
@@ -39,11 +62,41 @@ body {
   list-style: none;
 }
 
+.menu a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: ease-in, 0.3s;
+}
+
+.brand {
+  margin-top: -7px;
+}
 .brand span {
   color: var(--secondary-color);
 }
 
-.menu a {
+span {
   color: var(--secondary-color);
-  text-decoration: none;
+}
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px 1px;
+}
+
+.download-cv:hover {
+  background-color: white;
+  box-shadow: none;
+  transition-duration: 0.4s;
 }
