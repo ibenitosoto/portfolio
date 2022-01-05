@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-  --primary-color: #1e2547;
-  --secondary-color: #7e88df;
+  --first-color: #1e2547;
+  --second-color: #7e88df;
+  --third-color: #2a3468;
 }
 
 * {
@@ -13,16 +14,21 @@
 
 body {
   font-family: 'Poppins';
+  background: var(--first-color);
 }
 
 h1 {
   font-size: 3em;
 }
 
+h3 {
+  font-size: 1em;
+  background-color: var(--first-color);
+  text-align: center;
+}
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: var(--primary-color);
   color: white;
 }
 
@@ -44,7 +50,7 @@ main {
 
 main img {
   width: 400px;
-  border: var(--secondary-color) dashed 5px;
+  border: var(--second-color) dashed 5px;
 }
 
 main p {
@@ -63,14 +69,15 @@ main p {
 }
 
 .menu a {
-  color: var(--secondary-color);
+  font-size: 1.1rem;
+  color: var(--second-color);
   text-decoration: none;
   padding: 10px 20px;
 }
 
 .menu a:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--second-color);
+  color: var(--first-color);
   transition: ease-in, 0.3s;
 }
 
@@ -78,16 +85,16 @@ main p {
   margin-top: -7px;
 }
 .brand span {
-  color: var(--secondary-color);
+  color: var(--second-color);
 }
 
 span {
-  color: var(--secondary-color);
+  color: var(--second-color);
 }
 
 .download-cv {
   padding: 10px 20px;
-  background-color: var(--secondary-color);
+  background-color: var(--second-color);
   border: none;
   border-radius: 15px;
   margin-top: 30px;
@@ -99,4 +106,30 @@ span {
   background-color: white;
   box-shadow: none;
   transition-duration: 0.4s;
+}
+
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+  padding: 4rem;
+  margin-top: -2rem;
+}
+
+.auto-grid li {
+  list-style: none;
+  padding: 5rem 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  background: var(--third-color);
+}
+
+.auto-grid li:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: scale(1.05);
+  transition: ease-in 0.2s;
+  background: var(--second-color);
+
 }
