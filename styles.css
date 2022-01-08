@@ -92,12 +92,15 @@ span {
   color: var(--second-color);
 }
 
+.download-cv {
+  margin-top: 30px;
+}
+
 .download-cv, input[type=submit] {
   padding: 10px 20px;
   background-color: var(--second-color);
   border: none;
   border-radius: 15px;
-  margin-top: 30px;
   cursor: pointer;
   box-shadow: 1px 1px 6px 1px;
 }
@@ -143,6 +146,14 @@ form {
 
 label {
   color: var(--second-color);
+}
+
+#message {
+  height: 150px;
+}
+
+input[type=submit] {
+  margin-top: 10px;
 }
 
 input[type=text] {
