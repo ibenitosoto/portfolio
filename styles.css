@@ -2,7 +2,7 @@
 
 :root {
   --first-color: #1e2547;
-  --second-color: #7e88df;
+  --second-color: #56b4c0;
   --third-color: #2a3468;
 }
 
@@ -21,8 +21,8 @@ h1 {
   font-size: 3em;
 }
 
-h3 {
-  font-size: 1em;
+h2 {
+  font-size: 2em;
   background-color: var(--first-color);
   text-align: center;
 }
@@ -81,7 +81,7 @@ main p {
   transition: ease-in, 0.3s;
 }
 
-.brand {
+.logobrand {
   margin-top: -7px;
 }
 .brand span {
@@ -92,7 +92,7 @@ span {
   color: var(--second-color);
 }
 
-.download-cv {
+.download-cv, input[type=submit] {
   padding: 10px 20px;
   background-color: var(--second-color);
   border: none;
@@ -102,7 +102,7 @@ span {
   box-shadow: 1px 1px 6px 1px;
 }
 
-.download-cv:hover {
+.download-cv:hover, input[type=submit]:hover {
   background-color: white;
   box-shadow: none;
   transition-duration: 0.4s;
@@ -110,7 +110,6 @@ span {
 
 .auto-grid {
   --auto-grid-min-size: 16rem;
-  
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 1rem;
@@ -131,5 +130,19 @@ span {
   transform: scale(1.05);
   transition: ease-in 0.2s;
   background: var(--second-color);
+  color: var(--first-color);
+}
 
+form {
+  text-align: center;
+}
+
+label {
+  color: var(--second-color);
+}
+
+input[type=text] {
+  border-radius: 10px;
+  padding: 3px;
+  width: 230px;
 }
