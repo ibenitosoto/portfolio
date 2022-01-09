@@ -188,3 +188,7 @@ input[type=text] {
 .description {
   display: none;
 }
+
+.formField {
+  display: none;
+}
