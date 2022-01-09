@@ -192,3 +192,8 @@ input[type=text] {
 .formField {
   display: none;
 }
+
+.auto-grid li a {
+  color: white;
+  text-decoration: none;
+}
