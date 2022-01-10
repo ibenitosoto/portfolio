@@ -6,12 +6,6 @@
   --third-color: #2a3468;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Poppins';
   background: var(--first-color);
@@ -27,16 +21,19 @@ h2 {
   text-align: center;
 }
 .wrapper {
-  width: 100vw;
-  height: 100vh;
   color: white;
+}
+
+.logo {
+  margin-left: 2em;
+  margin-top: -1em;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 0.5em;
 }
 
 section {
@@ -46,13 +43,16 @@ section {
 }
 
 .intro p {
-  padding-right: 5em;
+  padding-right: 10em;
+  text-align: justify;
+  max-width: 80%;
 }
 
 #photo {
   width: 350px;
   height: 250px;
   border: var(--second-color) dashed 5px;
+  margin-top: 3em;
 }
 
 main p {
@@ -130,6 +130,15 @@ span {
   opacity: 0;
 }
 
+.auto-grid img {
+  width: 300px;
+  height: 200px;
+  list-style: none;
+  padding: 1em 1em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 .auto-grid li:hover {
   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
   transform: scale(1.05);
@@ -138,9 +147,12 @@ span {
   color: var(--first-color);
 }
 
-.projects {
-
+.auto-grid img:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
 }
+
+
 
 form {
   text-align: center;
@@ -202,3 +214,5 @@ input[type=text] {
 .fadeIn {
   display: none;
 }
+
+
