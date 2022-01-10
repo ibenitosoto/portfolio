@@ -26,11 +26,11 @@
 
         <main>
             <div class="info-content">
-                <h1>I'm <span>Ignacio Benito</span></h1>
-                <p>I am an architect specialized in BIM automation through programming, passionate about finding more efficient ways to get daily BIM tasks done. I have recently enrolled a computer science degree in IT Sligo, Ireland, where I will be learning new software engineering skills that will surely help during my career.</p>
-                <a href="#"><button class = "download-cv" download>Download CV</button></a>
+                <h1 class="fadeIn">I'm <span class="fadeIn">Ignacio Benito</span></h1>
+                <p  class="fadeIn">I am an architect specialized in BIM automation through programming, passionate about finding more efficient ways to get daily BIM tasks done. I have recently enrolled a computer science degree in IT Sligo, Ireland, where I will be learning new software engineering skills that will surely help during my career.</p>
+                <a href="#"><button class="fadeIn" id= "download-cv" download>Download CV</button></a>
             </div>
-            <img id="photo" src="photo_ibs.png" alt="Ignacio Benito picture">
+            <img id="photo" class="fadeIn" src="photo_ibs.png" alt="Ignacio Benito picture">
 
             <script>
                 $(document).ready(function() {
@@ -41,41 +41,41 @@
             });
             </script>
         </main>
+        
+            <div class="projects">
+            <h2><span>Projects</span> I have worked on</h2>
 
-        <div class="projects">
-        <h2><span>Projects</span> I have worked on</h2>
+            <ul class="auto-grid">
+                <li>Riyadh Metro Line 2 Exterior Railway Stations</li>
+                <li>Riyadh Metro Line 5 Underground Railway Stations</li>
+                <li>Basi Laboratories Pharmaceutical Industry</li>
+                <li>Sofitel Thalassa Alger Sea & Spa</li>
+                <li>INTU Shopping Resort in Malaga, Spain</li>
+                <li>Integrated Design Terminal Area-A Schiphol</li>
+                <li>Bar Ilan, Strauss and Yehezkel underground stations of the Blue Line
+                    Light Rail Train in Jerusalem</li>
+                <li>Madrid Atocha Railway station Phase 2 projects: Marquesina Historica</li>
+                <li>Madrid Atocha Railway station Phase 2 projects: Estacion Pasante</li>
+                <li>Thermofisher pharmaceutical new UK Basingstoke factory</li>
+                <li>Microsoft Ersbo new datacenter in Sweden</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
 
-        <ul class="auto-grid">
-            <li>Riyadh Metro Line 2 Exterior Railway Stations</li>
-            <li>Riyadh Metro Line 5 Underground Railway Stations</li>
-            <li>Basi Laboratories Pharmaceutical Industry</li>
-            <li>Sofitel Thalassa Alger Sea & Spa</li>
-            <li>INTU Shopping Resort in Malaga, Spain</li>
-            <li>Integrated Design Terminal Area-A Schiphol</li>
-            <li>Bar Ilan, Strauss and Yehezkel underground stations of the Blue Line
-                Light Rail Train in Jerusalem</li>
-            <li>Madrid Atocha Railway station Phase 2 projects: Marquesina Historica</li>
-            <li>Madrid Atocha Railway station Phase 2 projects: Estacion Pasante</li>
-            <li>Thermofisher pharmaceutical new UK Basingstoke factory</li>
-            <li>Microsoft Ersbo new datacenter in Sweden</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-            
-          </ul>
-        </div>
+                
+            </ul>
+            </div>
 
         <script>
             $(window).on("load",function() {
@@ -94,6 +94,14 @@
                 });
             }).scroll(); //invoke scroll-handler on page-load
             });
+        </script>
+
+        <script>
+            $(document).ready(function() { 
+                    $('.fadeIn').each(function(i) {
+                        $(this).delay(1000*(i+1)).fadeIn(1000); //Uses the each methods index+1 to create a multiplier on the delay
+                        });
+                    });
         </script>
 
  
