@@ -215,4 +215,23 @@ input[type=text] {
   display: none;
 }
 
+.work-videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+iframe {
+  margin: 20px 10px 20px 10px;
+}
+
+.working-in {
+  margin-top: 100px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
